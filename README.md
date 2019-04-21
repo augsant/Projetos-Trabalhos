@@ -1,4 +1,4 @@
-# Projetos-Trabalhos
+# Projetos e Trabalhos
 
 Algumas atividades desenvolvidas durante a faculdade que foram essenciais para meu desenvolvimento e aprendizado.
 
