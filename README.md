@@ -2,8 +2,7 @@
 
 Algumas atividades desenvolvidas durante a faculdade que foram essenciais para meu desenvolvimento e aprendizado.
 
-#######################################################################################################################
-
+################################################################################################
 Enunciado do EP1_C:
 
 
