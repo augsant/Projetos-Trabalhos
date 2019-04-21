@@ -43,21 +43,7 @@ codigoplano[(k*i) mod n] = (codigocifra[i] + i) mod 28.
 
 Aqui x mod y é o resto positivo da divisão de x por y. Por exemplo, 3 mod 7 = 3, 22 mod 8 = 6 e -1 mod 28 = 27. Você pode usar o operador ‘%’ do Python, desde que você some y caso o resultado seja menor que zero. Por último, os códigos obtidos em codigocifra são convertidos novamente em letras (pela mesma regra descrita anteriormente) e são armazenadas em textocifrado.
 
-ATENÇÃO às dicas sobre manipulação de caracteres em Python e em C.
-
-1. O Python que está instalado no avaliador automático é sua versão 2, assim para ler uma cadeia de caracteres (string) é preciso usar o comando raw_input(), por exemplo, como texto = raw_input(). Além, em Python deve-se utilizar duas funções pré-definidas para manipular caracteres e seu código (inicialmente existia apenas o ASCII - American Standard Code for Information Interchange, que usava apenas 8 bits). Por exemplo, o caractere/dígito '0' tem código 48, o caractere/dígito '1' tem código 49 e assim por diante (esses valores vem do "velho" ASCII). Então pode-se usar as funções ord(int) e chr(char), a primeira, dado um inteiro N devolve o caractere cujo código é N e a segunda, dado o caractere C, devolve seu código. Experimente o seguinte código Python:
-
-def converteInt2Char (n) :
-  return chr(n);
-def converteChar2Int (c) :
-  return ord(c);
-def main () :
-  print("Caractere | Codigo |\n%9c | %6d |\n%9c | %6d |\n%9c | %6d |\n%9c | %6d |" % ( 
-  converteInt2Char(48),48,converteInt2Char(49),49,'0',converteChar2Int('0'),'1',converteChar2Int('1')));
-main();
-
-
-2. Usando a linguagem C, lembre-se que a leitura de cadeias de caracteres (string) é feita usando o formatador %s e automaticamente após o último caractere válido digitado (para a string), é registrado o finalizador '\0', por exemplo, o código seguinte lê e imprime string: char str[10]; scanf("%s", str); printf("%s\n", str);. Além disso, lembre-se que em C a diferença entre caractere (char) e inteiro (int) está no formatador, pois os bytes são convertidos para um ou para outro de acordo com o formatador e o mapa básico de codificação é o ASCII - American Standard Code for Information Interchange, que usava apenas 8 bits). Por exemplo, o caractere/dígito '0' tem código 48, o caractere/dígito '1' tem código 49 e assim por diante (esses valores vem do "velho" ASCII). Então pode-se usar a biblioteca string.h e a função strlen(char *) como ilustrado abaixo.
+Usando a linguagem C, lembre-se que a leitura de cadeias de caracteres (string) é feita usando o formatador %s e automaticamente após o último caractere válido digitado (para a string), é registrado o finalizador '\0', por exemplo, o código seguinte lê e imprime string: char str[10]; scanf("%s", str); printf("%s\n", str);. Além disso, lembre-se que em C a diferença entre caractere (char) e inteiro (int) está no formatador, pois os bytes são convertidos para um ou para outro de acordo com o formatador e o mapa básico de codificação é o ASCII - American Standard Code for Information Interchange, que usava apenas 8 bits). Por exemplo, o caractere/dígito '0' tem código 48, o caractere/dígito '1' tem código 49 e assim por diante (esses valores vem do "velho" ASCII). Então pode-se usar a biblioteca string.h e a função strlen(char *) como ilustrado abaixo.
 
 #include <stdio.h>
 #include <string.h>
