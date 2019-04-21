@@ -43,25 +43,7 @@ codigoplano[(k*i) mod n] = (codigocifra[i] + i) mod 28.
 
 Aqui x mod y é o resto positivo da divisão de x por y. Por exemplo, 3 mod 7 = 3, 22 mod 8 = 6 e -1 mod 28 = 27. Você pode usar o operador ‘%’ do Python, desde que você some y caso o resultado seja menor que zero. Por último, os códigos obtidos em codigocifra são convertidos novamente em letras (pela mesma regra descrita anteriormente) e são armazenadas em textocifrado.
 
-Usando a linguagem C, lembre-se que a leitura de cadeias de caracteres (string) é feita usando o formatador %s e automaticamente após o último caractere válido digitado (para a string), é registrado o finalizador '\0', por exemplo, o código seguinte lê e imprime string: char str[10]; scanf("%s", str); printf("%s\n", str);. Além disso, lembre-se que em C a diferença entre caractere (char) e inteiro (int) está no formatador, pois os bytes são convertidos para um ou para outro de acordo com o formatador e o mapa básico de codificação é o ASCII - American Standard Code for Information Interchange, que usava apenas 8 bits). Por exemplo, o caractere/dígito '0' tem código 48, o caractere/dígito '1' tem código 49 e assim por diante (esses valores vem do "velho" ASCII). Então pode-se usar a biblioteca string.h e a função strlen(char *) como ilustrado abaixo.
-
-#include <stdio.h>
-#include <string.h>
-#define MAX 256
-void converteInt2Char (int n, char string[], int vet[]) {
-  int i;
-  for (i=0; i<n; i++)
-    string[i] = vet[i];
-  string[n] = '\0'; // finalizador para usar %s
-  }
-void main (void) {
-  char vetChar[MAX]; int vetInt[max]; int n, i;
-  scanf("%d", &n);
-  for (i=0; i<n; i++)
-    scanf("%d", &vetInt[i]); // entrar dados como inteiros (via codigo ASCII dos caracteres)
-  converteInt2Char(n, vetChar, vetInt);
-  print("String tem %d caracteres e os caracteres como string: %s\n", strlen(vetChar), vetChar);
-  }
+Usando a linguagem C, lembre-se que a leitura de cadeias de caracteres (string) é feita usando o formatador %s e automaticamente após o último caractere válido digitado (para a string), é registrado o finalizador '\0', por exemplo, o código seguinte lê e imprime string: char str[10]; scanf("%s", str); printf("%s\n", str);. Além disso, lembre-se que em C a diferença entre caractere (char) e inteiro (int) está no formatador, pois os bytes são convertidos para um ou para outro de acordo com o formatador e o mapa básico de codificação é o ASCII - American Standard Code for Information Interchange, que usava apenas 8 bits). Por exemplo, o caractere/dígito '0' tem código 48, o caractere/dígito '1' tem código 49 e assim por diante (esses valores vem do "velho" ASCII). Então pode-se usar a biblioteca string.h e a função strlen(char *).
   
 3. Atenção, muito cuidado com o alfabeto a ser utilizado! Para certificar-se que está na ordem correta (para Python: primeiro teste as funções ord(char) e chr(int); para C: teste as conversões char/int (char c; int i; print("%d %c\n%d %c\n", i, c, c, i);). Faça um programa para gerar os caracteres de 'a' até 'z' e seus códigos ASCII. Além disso, se o Python instalado no Moodle/VPL for a versão, é preciso usar o comando raw_input() para ler a mensagem.
 
