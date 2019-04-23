@@ -3,6 +3,7 @@
 Algumas atividades desenvolvidas durante a faculdade que foram essenciais para meu desenvolvimento e aprendizado.
 
 ###########################################################################################
+EP1 - MAC2166 - NOTA 10/10
 
 Enunciado do EP1_C:
 
@@ -26,6 +27,7 @@ Nos exemplos de saídas de um programa simulando o jogo, mostrados abaixo, as en
 Muito cuidado com a formatação, se você usar espaço em branco adicional ou usar algum caractere diferente (não use acentos!), o avaliador automático detectará como saída distinta e sua nota seria reduzida.
 
 ###########################################################################################
+EP2 - MAC2166 - NOTA 10/10
 
 Enunciado do EP2_C
 
